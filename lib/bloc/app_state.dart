@@ -8,6 +8,12 @@ class AppState {
   final LoginHandle? loginHandle;
   final Iterable<Note>? fetchedNotes;
 
+  const AppState.empty()
+      : isLoading = false,
+        loginError = null,
+        loginHandle = null,
+        fetchedNotes = null;
+
   const AppState({
     required this.isLoading,
     required this.loginError,
