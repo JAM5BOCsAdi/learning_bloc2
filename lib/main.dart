@@ -9,7 +9,7 @@ import 'package:learning_bloc2/dialogs/generic_dialog.dart';
 import 'package:learning_bloc2/dialogs/loading_screen.dart';
 import 'package:learning_bloc2/models.dart';
 import 'package:learning_bloc2/strings.dart';
-import 'package:learning_bloc2/views/Iterable_list_view.dart';
+import 'package:learning_bloc2/views/iterable_list_view.dart';
 import 'package:learning_bloc2/views/login_view.dart';
 
 void main() {

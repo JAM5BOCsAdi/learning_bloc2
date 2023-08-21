@@ -1,7 +1,7 @@
 const emailOrPasswordEmptyDialogTitle = 'Please fill in both email and the password fields';
 
 const emailOrPasswordEmptyDialogDescription =
-    'You seem to have forgotten to enter either the email or the password field, or both. Please';
+    'You seem to have forgotten to enter either the email or the password field, or both. Please enter a valid email and password to continue!';
 
 const loginErrorDialogTitle = 'Login error';
 const loginErrorDialogContent = 'Invalid email/password combination. Please try again with valid login credentials!';
