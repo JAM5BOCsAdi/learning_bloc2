@@ -8,10 +8,12 @@ import 'package:learning_bloc2/models.dart';
 class AppBloc extends Bloc<AppAction, AppState> {
   final LoginApiProtocol loginApi;
   final NotesApiProtocol notesApi;
+  final LoginHandle acceptedLoginHandle;
 
   AppBloc({
     required this.loginApi,
     required this.notesApi,
+    required this.acceptedLoginHandle,
   }) : super(const AppState.empty()) {
     on<LoginAction>(
       (event, emit) async {
@@ -53,7 +55,7 @@ class AppBloc extends Bloc<AppAction, AppState> {
 
         // Get the Login Handle
         final loginHandle = state.loginHandle;
-        if (loginHandle != const LoginHandle.fooBar()) {
+        if (loginHandle != acceptedLoginHandle) {
           // Invalid login handle can not fetch notes
           emit(
             AppState(
